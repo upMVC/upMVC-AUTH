@@ -145,7 +145,7 @@ class Controller
             //confirmation email
             $this->url     = BASE_URL . "/activation?token=" . $token;
             $to      = $_POST['email'];
-            $from    = 'office@bitsworld.ro';
+            $from    = 'office@bitshost.net';
             $subject = "Account Activation";
             $message = '<p>Activate your account:
             <br> <a href="' . $this->url . '"> Click on confirmation link.</a></p>';
