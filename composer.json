@@ -1,0 +1,27 @@
+{
+    "name": "upmvc/auth",
+    "description": "upMVC Authentication Module",
+    "type": "project",
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=8.1"
+    },
+    "authors": [
+        {
+            "name": "Adrian D",
+            "email": "contact@delvirai.net",
+            "homepage": "https://upmvc.com",
+            "role": "Developer"
+        }
+    ],
+    "license": [
+        "MIT"
+    ],
+    "autoload": {
+        "psr-4": {
+            
+            "Auth\\": "auth/",
+            "Auth\\Routes\\": "auth/routes/"     
+        }
+    }
+}
