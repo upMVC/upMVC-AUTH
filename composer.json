@@ -1,7 +1,7 @@
 {
     "name": "upmvc/auth",
     "description": "upMVC Authentication Module",
-    "type": "project",
+    "type": "library",
     "minimum-stability": "dev",
     "require": {
         "php": ">=8.1"
