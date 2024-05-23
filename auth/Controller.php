@@ -73,12 +73,12 @@ class Controller
         $view->startFooter();
         $view->endFooter();
 
-        $useri = new Model();
+        $users = new Model();
         if ($_POST) {
-            $useri->username = $_POST['username'];
-            $useri->password     = $_POST['password'];
-            //$useri->tokenSession = $token;
-            $stmt            = $useri->readUserLogin();
+            $users->username = $_POST['username'];
+            $users->password     = $_POST['password'];
+            //$users->tokenSession = $token;
+            $stmt            = $users->readUserLogin();
             if ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
                 $activ = intval($row['state']);
                 if ($activ === 1) {
